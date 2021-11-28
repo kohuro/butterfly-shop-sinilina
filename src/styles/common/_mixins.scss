@@ -1,0 +1,13 @@
+@mixin container {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid olivedrab;
+}
+
+@mixin section-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+}

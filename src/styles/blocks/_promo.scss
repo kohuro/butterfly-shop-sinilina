@@ -1,0 +1,19 @@
+.promo {
+  padding-top: 200px;
+  padding-bottom: 214px;
+  color: $color-light;
+  background-color: goldenrod;
+}
+
+.promo-inner {
+  @include container;
+}
+
+.promo-title {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  text-align: center;
+}

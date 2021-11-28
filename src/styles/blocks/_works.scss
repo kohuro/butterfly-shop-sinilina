@@ -1,0 +1,20 @@
+.works{
+  padding: 130px 0;
+}
+
+.works-inner {
+  @include container;
+}
+
+.works-title {
+  @include section-title;
+  margin-bottom: 97px;
+}
+
+.works-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
