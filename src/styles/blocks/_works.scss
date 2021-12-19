@@ -1,5 +1,13 @@
 .works{
   padding: 130px 0;
+
+  @media (max-width: $max-tablet) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 90px 0;
+  }
 }
 
 .works-inner {

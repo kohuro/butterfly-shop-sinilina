@@ -1,0 +1,97 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 90px;
+  margin-right: -$indent-gap-half;
+  margin-left: -$indent-gap-half;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+    margin-top: 60px;
+  }
+}
+
+.form-field {
+  flex-basis: 33.3%;
+  padding: 0 $indent-gap-half;
+
+  @media (max-width: $max-tablet) {
+    flex-basis: 50%;
+  }
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+}
+
+.form-input {
+  width: 100%;
+  padding: 35px 30px;
+  font-size: 28px;
+  line-height: 34px;
+  color: $color-dark;
+  background-color: $color-light;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-field-btn {
+  flex-basis: 33.3%;
+  padding: 0 $indent-gap-half;
+
+  @media (max-width: $max-tablet) {
+    flex-basis: 100%;
+    margin: 40px 0;
+  }
+
+  @media (max-width: $max-mobile) {
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+
+.form-field-checkbox {
+  width: 100%;
+  padding: 0 $indent-gap-half;
+
+  @media (min-width: $desktop) {
+    margin-top: 60px;
+  }
+}
+
+.form-checkbox {
+  display: none;
+
+  &:checked + .form-checkbox-label:before {
+    background-color: $color-accent;
+  }
+}
+
+.form-checkbox-label {
+  display: flex;
+  font-size: 28px;
+  line-height: 38px;
+  color: $color-dark;
+
+  a {
+    color: $color-accent;
+  }
+
+  &:before {
+    content: '';
+    flex-shrink: 0;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    border: 2px solid $color-accent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
