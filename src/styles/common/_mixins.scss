@@ -1,13 +1,25 @@
-@mixin container {
-  width: 1278px;
-  margin: 0 auto;
-  border: 1px solid olivedrab;
-}
-
 @mixin section-title {
   margin: 0;
   font-weight: 400;
   font-size: 64px;
   line-height: 87px;
   text-align: center;
+
+  @media (max-width: $max-tablet) {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+@mixin container($width: 1278px) {
+  max-width: $width + $indent-gap;
+  margin: 0 auto;
+  padding-left: $indent-gap-half;
+  padding-right: $indent-gap-half;
+  border: 1px solid olivedrab;
 }

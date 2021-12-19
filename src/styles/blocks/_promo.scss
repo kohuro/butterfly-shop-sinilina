@@ -1,8 +1,16 @@
 .promo {
+  color: $color-light;
+
+  background-image: url('/images/dreamy-man-big.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-fade {
   padding-top: 200px;
   padding-bottom: 214px;
-  color: $color-light;
-  background-color: goldenrod;
+  background-color: rgba($color-dark,.4);
 }
 
 .promo-inner {

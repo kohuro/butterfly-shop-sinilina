@@ -8,8 +8,26 @@ body {
 }
 
 .logo {
+  display: inline-block;
   margin-right: auto;
   font-weight: 600;
   font-size: 42px;
   line-height: 57px;
+
+  @media (max-width: $max-tablet) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

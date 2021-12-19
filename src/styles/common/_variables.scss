@@ -1,8 +1,18 @@
-$h1-fz-mobile: 20px;
-$h1-fz-tablet: 32px;
-$h1-fz-desktop: 48px;
-$h1-fw: 400;
-
+// Colors
 $color-dark: #333;
 $color-accent: #FF2D2D;
 $color-light: #fff;
+
+// Indents
+// $indent-section-top: 140px;
+
+$indent-gap: 20px;
+$indent-gap-half: $indent-gap / 2;
+
+// Breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$max-mobile: $tablet - 1;
+$max-tablet: $desktop - 1;
