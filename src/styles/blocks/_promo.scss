@@ -1,6 +1,5 @@
 .promo {
   color: $color-light;
-
   background-image: url('/images/dreamy-man-big.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +21,7 @@
 
 .promo-inner {
   @include container;
+  text-align: center;
 }
 
 .promo-title {
@@ -30,7 +30,6 @@
   font-weight: 600;
   font-size: 72px;
   line-height: 98px;
-  text-align: center;
 
   @media (max-width: $max-tablet) {
     font-size: 54px;
