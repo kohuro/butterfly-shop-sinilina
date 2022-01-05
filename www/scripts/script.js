@@ -1,12 +1,11 @@
 $(document).ready(function() {
-  let manAge = 45;
 
-  {
-    console.log( manAge );
-  }
+  // Выпадающее меню
+  $('.js-burger').on('click', function(){
 
-  let userName = ['Анна', 'Ольга', 'Сергей', 'некто'];
-  console.log( userName.length );
+    $('.js-main-nav').toggleClass('main-nav-open');
+  });
+
 
 
 

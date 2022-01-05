@@ -1,7 +1,8 @@
 .main-nav {
-  @media (min-width: $desktop) {
-    display: block !important;
-  }
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
 
   @media (max-width: $max-mobile) {
     position: absolute;
@@ -13,11 +14,6 @@
     text-align: center;
     background-color: $color-dark;
   }
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
 
   ul {
     display: flex;
@@ -49,5 +45,11 @@
 
   a:hover {
     text-decoration: underline;
+    }
+  }
+
+  .main-nav-open {
+    @media (max-width: $max-mobile) {
+      display: block;
     }
   }
