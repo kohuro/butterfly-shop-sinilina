@@ -1,55 +1,55 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
   // Выпадающее меню
-  $('.js-burger').on('click', function(){
+  $('.js-burger').on('click', function () {
 
     $('.js-main-nav').toggleClass('main-nav-open');
   });
 
+
   // Табы для контактов
-    $('.tabs-link').on('click', function(e){
+  $('.tabs-link').on('click', function (e) {
 
-      e.preventDefault();
+    e.preventDefault();
 
-      let index = $(this).index('.tabs-link');
+    let index = $(this).index('.tabs-link');
 
-      $('.tabs-link').removeClass('active');
-      $(this).addClass('active');
+    $('.tabs-link').removeClass('active');
+    $(this).addClass('active');
 
-      $('.contacts-content').removeClass('active');
-      $('.contacts-content').eq(index).addClass('active');
-    })
+    $('.contacts-content').removeClass('active');
+    $('.contacts-content').eq(index).addClass('active');
+  })
+
 
   // Аккордеоны для FAQ
   let prevBtn;
-    $('.js-accordeon-btn').on('click', function(){
+  $('.js-accordeon-btn').on('click', function () {
 
     if (prevBtn === $(this)[0]) {
+
       $(this).next().slideToggle();
-      // $(this).find('.js-faq-icon').css({'background-image': 'url(/images/i-plus.svg)'});
+      let iconClass = $(this).find('.js-faq-icon').attr('class');
+
+      if (iconClass == 'faq-icon js-faq-icon open') {
+
+        $(this).find('.js-faq-icon').removeClass('open');
+        return
+      }
+
+      $(this).find('.js-faq-icon').addClass('open');
       return;
     }
 
     $('.js-accordeon-btn').next().slideUp();
-    // $('.js-accordeon-btn').find('.js-faq-icon').css({'background-image': 'url(/images/i-plus.svg)'});
+    $('.js-accordeon-btn').find('.js-faq-icon').removeClass('open');
     $(this).next().slideDown();
-    // $(this).find('.js-faq-icon').css({'background-image': 'url(/images/i-minus.svg)'});
+    $(this).find('.js-faq-icon').addClass('open');
 
     prevBtn = $(this)[0];
   })
 
-  let openIcon = false;
-  $('.js-accordeon-btn').on('click', function(){
-
-    if (openIcon === false) {
-      $(this).find('.js-faq-icon').css({'background-image': 'url(/images/i-minus.svg)'});
-      openIcon = true;
-      return;
-    }
-
-    $('.js-accordeon-btn').find('.js-faq-icon').css({'background-image': 'url(/images/i-plus.svg)'});
-    openIcon = false;
-  })
 
 
- });
+
+});

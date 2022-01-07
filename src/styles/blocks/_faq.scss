@@ -80,6 +80,10 @@
     width: 30px;
     height: 30px;
   }
+
+  &.open {
+    background-image: url(/images/i-minus.svg);
+  }
 }
 
 .faq-answer {
