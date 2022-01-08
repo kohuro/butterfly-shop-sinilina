@@ -50,6 +50,18 @@ $(document).ready(function () {
   })
 
 
+  // Слайдер отзывов
+
+  // $('.click-slider').slick();
+
+  if ( $('.js-slider-wrap').length ) {
+    $('.js-slider-wrap').each(function() {
+      $(this).find('.js-slider').slick({
+        prevArrow: $(this).find('.js-btn-prev'),
+        nextArrow: $(this).find('.js-btn-next'),
+      });
+    });
+  }
 
 
 });

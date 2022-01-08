@@ -1,0 +1,127 @@
+.slider-wrap {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $max-tablet) {
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  @media (max-width: $max-mobile) {
+    // display: block;
+    margin-top: 50px;
+  }
+}
+
+.slider-btn {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('/images/i-slider-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $max-tablet) {
+    width: 44px;
+    height: 44px;
+  }
+
+  span {
+    font-size: 0;
+    opacity: 0;
+  }
+}
+
+.slider {
+  width: 66.66%;
+  margin: 0 128px - $indent-gap-half;
+  flex-shrink: 0;
+
+  @media (max-width: $max-tablet) {
+    width: 83.33%;
+    margin: 0 -$indent-gap-half;
+  }
+
+  // @media (max-width: $max-mobile) {
+  //   width: 100%;
+  // }
+}
+
+.slider-card {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
+}
+
+.slider-pic-wrap {
+  flex-basis: 37.5%;
+  padding: 0 $indent-gap-half;
+
+  @media (max-width: $max-tablet) {
+    flex-basis: 40%;
+  }
+}
+
+.slider-pic {
+  width: 100%;
+}
+
+.slider-textblock {
+  flex-basis: 62.5%;
+  padding: 0 $indent-gap-half;
+
+  @media (max-width: $max-tablet) {
+    flex-basis: 60%;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
+
+.slider-name {
+  font-size: 48px;
+  line-height: 65px;
+  margin-bottom: 40px;
+
+  @media (max-width: $max-tablet) {
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+}
+
+.slider-blockquote {
+  margin: 0;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (max-width: $max-tablet) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+
+
