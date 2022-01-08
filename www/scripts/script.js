@@ -51,9 +51,6 @@ $(document).ready(function () {
 
 
   // Слайдер отзывов
-
-  // $('.click-slider').slick();
-
   if ( $('.js-slider-wrap').length ) {
     $('.js-slider-wrap').each(function() {
       $(this).find('.js-slider').slick({
@@ -63,5 +60,33 @@ $(document).ready(function () {
     });
   }
 
+
+  // Фильтр для каталога
+  $('.filter-link').on('click', function(e){
+
+    e.preventDefault();
+
+    let linkType = $(this).data('type');
+
+    $('.filter-link').removeClass('active');
+    $(this).addClass('active');
+
+    if (linkType === 'all') {
+      $('.works-item').show();
+      return;
+    }
+
+    $('.works-item').each(function(){
+
+      let itemType = $(this).data('type');
+
+      if (linkType === itemType) {
+        $(this).show();
+        return;
+      }
+
+      $(this).hide();
+    })
+  })
 
 });

@@ -67,6 +67,10 @@
     &:hover {
       text-decoration: underline;
     }
+
+    &.active {
+      color: $color-accent;
+    }
   }
 
 .works-list {
