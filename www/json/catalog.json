@@ -1,0 +1,28 @@
+{
+  "works": [
+    {
+      "dataType": "funny",
+      "imageUrl": "images/btf-wood-transparent.jpg",
+      "imageAlt": "Ажурная деревянная бабочка",
+      "descr": "Рождественская"
+    },
+    {
+      "dataType": "strict",
+      "imageUrl": "images/btf-simple-black.jpg",
+      "imageAlt": "Строгая чёрная бабочка",
+      "descr": "Классика"
+    },
+    {
+      "dataType": "adults",
+      "imageUrl": "images/btf-red-dot.jpg",
+      "imageAlt": "Бордовая бабочка в точку",
+      "descr": "Бордовая"
+    },
+    {
+      "dataType": "strict",
+      "imageUrl": "images/btf-simple-white.jpg",
+      "imageAlt": "Простая бежевая бабочка",
+      "descr": "Бежевая"
+    }
+  ]
+}
